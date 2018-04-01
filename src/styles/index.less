@@ -1,0 +1,30 @@
+@primaryColor: #0288D1;
+@secondaryColor: #EEE;
+@primaryTextColor: rgba(0, 0, 0, 0.87);
+@secondaryTextColor: rgba(0, 0, 0, 0.38);
+
+// mixins
+
+.file-upload-box () {
+  height: 100px;
+  width: 100px;
+  border: 1px dashed @secondaryColor;
+  color: @secondaryColor;
+  margin-right: 5px;
+  .flex;
+  .border-radius;
+}
+
+.border-radius () {
+  border-radius: 5px;
+}
+
+.flex () {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cursor-point {
+  cursor: pointer;
+}
